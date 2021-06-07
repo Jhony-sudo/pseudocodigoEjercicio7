@@ -1,0 +1,32 @@
+Algoritmo Ej7
+  NumPar = 0
+  NumImpar = 0
+  NumNull = 0
+	Para i = 1 Hasta 15 Con Paso 1
+		Num = Aleatorio(0,36)
+		Residuo = Num%2
+		Escribir Num
+		Segun Residuo Hacer
+			0: 
+				Si Num = 0
+					
+					NumNull = NumNull + 1
+				SiNo
+					
+					NumPar = NumPar + 1
+				FinSi
+			1: 
+				NumImpar = NumImpar + 1
+			De Otro Modo:
+				Escribir ""
+		Fin Segun
+		
+	FinPara
+  PorcentajePar = (NumPar/15)*100 
+  PorcentajeImpar = (NumImpar/15) * 100	
+  PorcentajeNull = (NumNull/15)*100
+  Escribir PorcentajePar "% de los numeros son pares"
+  Escribir PorcentajeImpar "% de los numeros son Impares" 
+  Escribir PorcentajeNull "% de los numeros son 0"
+  
+FinAlgoritmo
